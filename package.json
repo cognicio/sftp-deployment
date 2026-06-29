@@ -2,12 +2,12 @@
   "name": "sftp-deployment",
   "displayName": "sftp-deployment",
   "description": "SFTP integration similar to JetBrains",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "publisher": "cognicio",
   "repository": {
     "type": "git",
-    "url": "https://github.com/bklein01/sftp-deployment.git"
+    "url": "https://github.com/cognicio/sftp-deployment.git"
   },
   "engines": {
     "vscode": "^1.60.0"
@@ -24,16 +24,23 @@
         "title": "Deployment: Switch Active Target"
       },
       {
-        "command": "sftp.uploadFile",
+        "command": "sftp.upload",
         "title": "Deployment: Upload to Server"
+      },
+      {
+        "command": "sftp.download",
+        "title": "Deployment: Download from Server"
       }
     ],
     "menus": {
       "explorer/context": [
         {
-          "command": "sftp.uploadFile",
-          "group": "7_modification",
-          "when": "explorerResourceIsFolder == false"
+          "command": "sftp.upload",
+          "group": "7_modification"
+        },
+        {
+          "command": "sftp.download",
+          "group": "7_modification"
         }
       ]
     }
