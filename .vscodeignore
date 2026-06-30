@@ -9,3 +9,10 @@ vsc-extension-quickstart.md
 **/*.map
 **/*.ts
 **/.vscode-test.*
+!.vscode/sftp.json
+tmp/**
+node_modules/**
+tsconfig.json
+webpack.config.js
+package-lock.json
+*.vsix

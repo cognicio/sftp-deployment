@@ -13,6 +13,9 @@ module.exports = {
   optimization: {
     minimize: false
   },
+  externals: {
+    'vscode': 'commonjs vscode' // Tells webpack to leave 'require("vscode")' as-is
+  },
   resolve: {
     extensions: ['.ts', '.js']
   },
@@ -34,8 +37,5 @@ module.exports = {
     new webpack.IgnorePlugin({
       resourceRegExp: /^cpu-features$/
     })
-  ],
-  externals: {
-    vscode: 'commonjs vscode'
-  }
+  ]
 };

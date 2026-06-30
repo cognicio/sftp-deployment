@@ -2,7 +2,7 @@
   "name": "sftp-deployment",
   "displayName": "sftp-deployment",
   "description": "SFTP integration similar to JetBrains",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "license": "MIT",
   "publisher": "cognicio",
   "repository": {
