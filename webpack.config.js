@@ -10,6 +10,9 @@ module.exports = {
     libraryTarget: 'commonjs'
   },
   devtool: 'source-map',
+  optimization: {
+    minimize: false
+  },
   resolve: {
     extensions: ['.ts', '.js']
   },
